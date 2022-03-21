@@ -21,3 +21,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.font-ibm-sans {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.font-ibm-serif {
+  font-family: 'IBM Plex Serif', serif;
+}

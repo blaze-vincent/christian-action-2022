@@ -3,7 +3,9 @@ import Header from './header'
 import Footer from './footer'
 
 export default function Layout({children}){
-  return (<>
+  return (<div
+    className="bg-white"
+  >
     <Head>
       <title>nextjs w/ tailwindcss</title>
       <meta name="description" content="bv nextjs template with tailwindcss" />
@@ -15,5 +17,5 @@ export default function Layout({children}){
     <main>{children}</main>
 
     <Footer />
-    </>)
+    </div>)
 }
