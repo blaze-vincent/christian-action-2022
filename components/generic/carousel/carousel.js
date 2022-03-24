@@ -46,20 +46,23 @@ export default function Carousel({
     slidesContainer.current.style.transition = 'transform 0.5s'
     slidesContainer.current.style.cursor = 'grab'
 
-    const dragDistance = e.clientX - grabX
-    //if slide is dragged over a quarter a slides distance
-    if(Math.abs(dragDistance) > (0.2 * slidesContainer.current.parentElement.getBoundingClientRect().width)){
-      //dragged right to left
-      if(dragDistance < 0){
-        setDisplayedSlide(displayedSlide + 1)
+    if(grabX){
+      const dragDistance = e.clientX - grabX
+      //if slide is dragged over a quarter a slides distance
+      if(Math.abs(dragDistance) > (0.2 * slidesContainer.current.parentElement.getBoundingClientRect().width)){
+        //dragged right to left
+        if(dragDistance < 0){
+          setDisplayedSlide(displayedSlide + 1)
+        } else {
+          //dragged left to right
+          setDisplayedSlide(displayedSlide - 1)
+        }
       } else {
-        //dragged left to right
-        setDisplayedSlide(displayedSlide - 1)
+        //center selected slide in frame if a new one isnt chosen
+        slidesContainer.current.style.transform = `translateX(-${displayedSlide * 100}%)`
       }
-    } else {
-      //center selected slide in frame if a new one isnt chosen
-      slidesContainer.current.style.transform = `translateX(-${displayedSlide * 100}%)`
     }
+
     setClickDetected(false)
   }
 
@@ -85,10 +88,14 @@ export default function Carousel({
         setGrabX(e.clientX)
       }}
       onPointerUp={e => {
+        setGrabX(null)
         handlePointerUp(e)
       }}
       onPointerLeave={e => {
         handlePointerUp(e)
+      }}
+      onPointerEnter={e => {
+        setGrabX(null)
       }}
 
       onPointerMove={e => {
