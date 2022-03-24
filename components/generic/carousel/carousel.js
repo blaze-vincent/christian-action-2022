@@ -1,4 +1,6 @@
 import { useRef, useState, useEffect } from "react"
+import CarouselButton from "./button"
+import Endcap from "./endcap"
 import Slide from "./slide"
 
 export default function Carousel({
@@ -7,37 +9,107 @@ export default function Carousel({
       imgSrc: '/images/citrus.webp',
     },
     {
+      imgSrc: '/images/goldenratio.jpg',
+    },
+    {
       imgSrc: '/images/sky.webp',
     },
+    {
+      imgSrc: '/images/sky2.jpeg',
+    },
   ]
-}){
+}) {
 
   const slidesContainer = useRef(null)
   const [displayedSlide, setDisplayedSlide] = useState(0)
   useEffect(_ => {
-    slidesContainer.current.style.transform = `translateX(-${displayedSlide * 100}%)`
+    //edge cases (literally lol)
+    if(displayedSlide < 0){
+      setDisplayedSlide(slides.length - 1)
+    } else if (displayedSlide > (slides.length - 1)){
+      setDisplayedSlide(0)
+    } 
+    
+    else {
+      slidesContainer.current.style.transform = `translateX(-${displayedSlide * 100}%)`
+    }
+    slidesContainer.current.style.transition = 'transform 0.5s'
+
   }, [displayedSlide])
-  
-  
+
+
+  //grab controls
+  const [clickDetected, setClickDetected] = useState(false)
+  const [grabX, setGrabX] = useState(null)
+
+  const handlePointerUp = e => {
+    slidesContainer.current.style.transition = 'transform 0.5s'
+    slidesContainer.current.style.cursor = 'grab'
+
+    const dragDistance = e.clientX - grabX
+    //if slide is dragged over a quarter a slides distance
+    if(Math.abs(dragDistance) > (0.2 * slidesContainer.current.parentElement.getBoundingClientRect().width)){
+      //dragged right to left
+      if(dragDistance < 0){
+        setDisplayedSlide(displayedSlide + 1)
+      } else {
+        //dragged left to right
+        setDisplayedSlide(displayedSlide - 1)
+      }
+    } else {
+      //center selected slide in frame if a new one isnt chosen
+      slidesContainer.current.style.transform = `translateX(-${displayedSlide * 100}%)`
+    }
+    setClickDetected(false)
+  }
+
   //frame
   return <div
     className="
-    relative max-w-2xl w-full h-80 overflow-hidden
+    relative max-w-screen-lg w-full h-80 m-auto overflow-hidden bg-stone-800
     "
   >
+
     {/*slides container*/}
     <div
       ref={slidesContainer}
       className="h-full w-full 
-        flex flex-row gap-0
-        transition-transform
+        flex flex-row items-center gap-0
+        cursor-grab
         "
+      onPointerDown={e => {
+        e.preventDefault()
+        slidesContainer.current.style.transition = ''
+        slidesContainer.current.style.cursor = 'grabbing'
+        setClickDetected(true)
+        setGrabX(e.clientX)
+      }}
+      onPointerUp={e => {
+        handlePointerUp(e)
+      }}
+      onPointerLeave={e => {
+        handlePointerUp(e)
+      }}
+
+      onPointerMove={e => {
+        if (clickDetected) {
+          slidesContainer.current.style.transform = `translateX(calc(-${displayedSlide * 100}% + ${e.clientX - grabX}px))`
+        }
+      }}
     >
+
+      {/*endcap*/}
+      <Endcap />
+
       {
         slides.map((slideObj, index) => {
-          return <Slide imgSrc={slideObj.imgSrc} key={index} order={index}/>
+          return <Slide imgSrc={slideObj.imgSrc} key={index} order={index} />
         })
       }
+
+      {/*endcap*/}
+      <Endcap side='right' slidesCount={slides.length} />
+
     </div>
 
     {/* slider buttons container*/}
@@ -45,11 +117,12 @@ export default function Carousel({
       className="flex flex-row gap-8 absolute bottom-4 w-full justify-center"
     >
       {slides.map((_, index) => {
-        //slider buttons x3
-        return <button 
-          key={index}
-          className='w-6 h-6 bg-white rounded-full border-solid border-white border-0 hover:border-2 hover:bg-neutral-700' 
-          onClick={_ => setDisplayedSlide(index)}  
+        //slider buttons
+        return <CarouselButton 
+          key={index} 
+          selected={displayedSlide === index}
+          index={index}
+          setDisplayedSlide={setDisplayedSlide}  
         />
       })}
     </div>
