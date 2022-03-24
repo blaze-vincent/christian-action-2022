@@ -4,7 +4,7 @@ import Footer from './footer'
 
 export default function Layout({children}){
   return (<div
-    className="bg-white"
+    className="bg-white font-ibm-sans text-neutral-800"
   >
     <Head>
       <title>nextjs w/ tailwindcss</title>
@@ -14,7 +14,9 @@ export default function Layout({children}){
 
     <Header />
 
-    <main>{children}</main>
+    <main
+      className="h-max min-h-screen"
+    >{children}</main>
 
     <Footer />
     </div>)
