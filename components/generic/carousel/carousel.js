@@ -69,7 +69,7 @@ export default function Carousel({
   //frame
   return <div
     className="
-    relative max-w-screen-lg w-full h-80 m-auto overflow-hidden bg-stone-800
+    relative max-w-screen-lg w-full h-[25rem] m-auto overflow-hidden bg-stone-800
     "
   >
 
