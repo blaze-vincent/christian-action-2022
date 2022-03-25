@@ -3,7 +3,7 @@ import Navbar from "./generic/navbar/navbar";
 
 export default function Header(){
   return (<header
-    className="flex px-4 sm:flex-row items-center flex-col sm:gap-4 justify-between w-full max-w-screen-lg m-auto"
+    className="flex px-4 py-1 sm:flex-row items-center flex-col sm:gap-4 justify-between w-full max-w-screen-lg m-auto"
   >
     <Link href='/'>
       <a>
