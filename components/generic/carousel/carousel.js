@@ -1,3 +1,8 @@
+//known issues:
+//  images must be resized on viewport resize
+
+
+
 import { useRef, useState, useEffect } from "react"
 import CarouselButton from "./button"
 import Endcap from "./endcap"
@@ -69,7 +74,7 @@ export default function Carousel({
   //frame
   return <div
     className="
-    relative max-w-screen-lg w-full h-[25rem] m-auto overflow-hidden bg-stone-800
+    relative w-full h-[25rem] overflow-hidden bg-stone-800
     "
   >
 
