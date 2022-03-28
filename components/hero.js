@@ -8,7 +8,7 @@ export default function Hero(){
     <div
       className="bg-blue-300 p-4 h-max overflow-auto flex flex-col gap-4"
     >
-      <h2 className="font-ibm-serif font-medium text-xl">
+      <h2 className="font-ibm-serif font-medium text-2xl">
         Lorem Ipsum
       </h2>
       <p>
