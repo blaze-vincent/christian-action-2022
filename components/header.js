@@ -23,8 +23,8 @@ export default function Header(){
     <div 
       className="
       w-full max-w-screen-lg m-auto p-4
-      bg-blue-400
-      border-t-2 border-blue-500 
+      bg-blue-300
+      border-t-2 border-blue-500
       "
     >
       <p>Home</p>
