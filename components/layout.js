@@ -15,7 +15,7 @@ export default function Layout({children}){
     <Header />
 
     <main
-      className="h-max min-h-screen"
+      className="h-max min-h-screen flex flex-col gap-4 justify-start items-center"
     >{children}</main>
 
     <Footer />

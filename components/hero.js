@@ -1,18 +1,18 @@
 import Carousel from "./generic/carousel/carousel";
 
 export default function Hero(){
-  return <div className="w-full max-w-screen-lg m-auto grid sm:grid-cols-3 gap-2">
+  return <div className="w-full max-w-screen-lg grid sm:grid-cols-3 gap-2">
     <Carousel 
       className='sm:col-span-2'
     />
     <div
-      className="bg-blue-400 p-4 flex flex-col gap-4"
+      className="bg-blue-300 p-4 h-max overflow-auto flex flex-col gap-4"
     >
       <h2 className="font-ibm-serif font-medium text-xl">
         Lorem Ipsum
       </h2>
       <p>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
   </div>
