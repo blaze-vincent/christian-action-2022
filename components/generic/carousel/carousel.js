@@ -9,6 +9,7 @@ import Endcap from "./endcap"
 import Slide from "./slide"
 
 export default function Carousel({
+  className,
   slides = [
     {
       imgSrc: '/images/citrus.webp',
@@ -73,9 +74,7 @@ export default function Carousel({
 
   //frame
   return <div
-    className="
-    relative w-full h-[25rem] overflow-hidden bg-stone-800
-    "
+    className={" relative w-full h-[25rem] overflow-hidden bg-stone-800 " + className}
   >
 
     {/*slides container*/}
