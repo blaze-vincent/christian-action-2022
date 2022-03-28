@@ -3,7 +3,7 @@ import SVG from "../svg/svg";
 export default function Section({imgSrc, textContent, }){
 
   return <div
-    className="flex flex-row gap-4 w-full items-end p-4"
+    className="flex flex-row gap-4 w-full items-end"
   >
     <SVG src={imgSrc} className='bg-blue-300' />
     <p
