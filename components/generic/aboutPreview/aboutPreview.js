@@ -1,0 +1,11 @@
+import Section from "./section"
+
+export default function AboutPreview(){
+  return <div
+    className="w-full max-w-screen-lg m-auto"
+  >
+    <Section imgSrc={'/svg/house-broken.svg'} textContent='Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'/>
+    <Section imgSrc={'/svg/help.svg'} textContent='Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
+    <Section imgSrc={'/svg/house.svg'} textContent='Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+  </div>
+}
