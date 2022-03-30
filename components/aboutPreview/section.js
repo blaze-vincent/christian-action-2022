@@ -1,4 +1,4 @@
-import SVG from "../svg/svg";
+import SVG from "../generic/svg/svg";
 
 export default function Section({imgSrc, textContent, }){
 
