@@ -3,7 +3,7 @@ import Navbar from "./generic/navbar/navbar";
 
 export default function Header(){
   return (<header
-    className="w-full max-w-screen-lg m-auto flex flex-col gap-1 text-neutral-800 "
+    className="w-full max-w-screen-lg m-auto flex flex-col text-neutral-800 "
   >
 
     {/* 'logo' and navbar*/}
@@ -19,10 +19,17 @@ export default function Header(){
       <Navbar />
     </div>
 
+    {/* tagline */}
+    <div
+      className="relative w-full max-w-max top-1 px-4 text-neutral-700 font-medium text-center"
+    >
+      <p>A non-profit corporation designed for enabling home ownership</p>
+    </div>
+
     {/* placeholder breadcrumb trail */}
     <div 
       className="
-      w-full max-w-screen-lg m-auto p-4
+      w-full p-4
       bg-blue-300
       border-t-2 border-blue-500
       "
