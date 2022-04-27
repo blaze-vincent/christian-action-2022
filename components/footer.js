@@ -10,12 +10,9 @@ export default function Footer(){
      })
   }
 
-  return (<footer className="bg-stone-800 text-white p-4 mt-4">
+  return (<footer className="bg-stone-800 text-white p-4 mt-4 w-full max-w-screen-lg m-auto h-80">
     {/* width container */}
-    <div
-      className="w-full max-w-screen-lg m-auto"
-    >
-      <button
+    <button
         className="flex flex-row gap-2 items-center"
         onClick={scrollToTop}
       >
@@ -26,6 +23,5 @@ export default function Footer(){
           title='back to top'  
         />
       </button>
-    </div>
   </footer>)
 }

@@ -3,7 +3,7 @@ import Navbar from "./generic/navbar/navbar";
 
 export default function Header(){
   return (<header
-    className="w-full max-w-screen-lg m-auto flex flex-col gap-1 pb-2 text-neutral-800 "
+    className="w-full max-w-screen-lg m-auto flex flex-col gap-1 text-neutral-800 "
   >
 
     {/* 'logo' and navbar*/}
