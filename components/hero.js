@@ -1,4 +1,4 @@
-import Carousel from "./generic/carousel/carousel";
+import Carousel from "./carousel/carousel";
 
 export default function Hero(){
   return <div className="w-full max-w-screen-lg grid sm:grid-cols-3 gap-2">

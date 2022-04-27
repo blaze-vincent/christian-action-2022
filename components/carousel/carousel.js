@@ -12,16 +12,13 @@ export default function Carousel({
   className,
   slides = [
     {
-      imgSrc: '/images/citrus.webp',
+      imgSrc: '/images/hands.jpg',
     },
     {
-      imgSrc: '/images/goldenratio.jpg',
+      imgSrc: '/images/paperwork.jpg',
     },
     {
-      imgSrc: '/images/sky.webp',
-    },
-    {
-      imgSrc: '/images/sky2.jpeg',
+      imgSrc: '/images/house.jpg',
     },
   ]
 }) {
@@ -43,6 +40,12 @@ export default function Carousel({
 
   }, [displayedSlide])
 
+  //correct image position on screen size change
+  useEffect(_ => {
+    window.addEventListener('resize', _ => {
+
+    })
+  }); 
 
   //grab controls
   const [clickDetected, setClickDetected] = useState(false)

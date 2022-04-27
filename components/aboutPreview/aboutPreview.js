@@ -8,9 +8,10 @@ export default function AboutPreview(){
     <h2
       className="text-2xl font-ibm-serif font-medium max-w-max bg-blue-300 px-8 border-solid border-t-2 border-blue-500 p-2 "
     >About us</h2>
-    <Section imgSrc={'/svg/house-broken.svg'} textContent='Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'/>
-    <Section imgSrc={'/svg/help.svg'} textContent='Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
-    <Section imgSrc={'/svg/house.svg'} textContent='Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+
+    <Section imgSrc={'/svg/house-broken.svg'} textContent='Our services are intended for those in difficult situations in need of housing and loan support.'/>
+    <Section imgSrc={'/svg/help.svg'} textContent='We aid people in achieving a comfortable living situation. To do so, we offer partial down payments and zero-interest loans, for example.'/>
+    <Section imgSrc={'/svg/house.svg'} textContent='With our help, you can get back on your feet and live comfortably.'/>
     <Link 
       href='/about'       
     >
