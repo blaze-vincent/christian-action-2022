@@ -3,7 +3,7 @@ import {useState} from 'react';
 export default function Contact({name, emailAddress}){
   const [emailHidden, setEmailHidden] = useState(true);
 
-  return <div className="relative odd:bg-blue-200 p-2 flex flex-row items-center justify-between">
+  return <div className="relative odd:bg-blue-200 p-2 flex sm:flex-row flex-col items-center justify-between">
     {name}
     {
     emailHidden && <button
