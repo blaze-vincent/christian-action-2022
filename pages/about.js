@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 export default function About(){
   
   const partners = [
@@ -28,6 +30,12 @@ export default function About(){
   return <div
     className="w-full max-w-screen-lg"
   >
+
+    <Head>
+      <title>
+        About - Christian Action, Inc.
+      </title>
+    </Head>
 
     {/* partners */}
     <div
