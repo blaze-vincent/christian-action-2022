@@ -1,6 +1,7 @@
 import AboutPreview from "../components/aboutPreview/aboutPreview"
 import Hero from "../components/hero"
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (<>
@@ -23,7 +24,7 @@ export default function Home() {
         className="text-2xl font-medium font-ibm-serif"
       >Give</h2>
       <p>Christian Action is primarily funded through donations.</p>
-      <p>If you are considering donation, please reach out to Christian Action, Inc. through one of the contacts listed <a className="underline" href="/resources">here</a>.</p>
+      <p>If you are considering donation, please reach out to Christian Action, Inc. through one of the contacts listed <Link href="/resources"><a className="underline">here</a></Link>.</p>
       <p>Your contribution may be tax-deductible within the limits prescribed by the law.</p>
     </div>
   </>

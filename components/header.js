@@ -52,7 +52,7 @@ export default function Header(){
     >
       {
         location !== 'Home' && <>
-          <a href='/' className="underline">Home</a>
+          <Link href='/'><a className="underline">Home</a></Link>
           <p>&gt;</p>
           <a>{location}</a>
         </>
