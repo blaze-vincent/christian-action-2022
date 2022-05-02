@@ -1,7 +1,22 @@
 import Link from "next/link";
 import Navbar from "./navbar/navbar";
+import {useState, useEffect} from 'react'
+import {useRouter} from "next/router"
+
+const locations = {
+  '/': 'Home',
+  '/about': 'About',
+  '/resources': 'Resources',
+  '/give': 'Give'
+}
 
 export default function Header(){
+  const router = useRouter();
+  const [location, setLocation] = useState('Home');
+  useEffect(_ => {
+    setLocation(locations[router.pathname])
+  }, [router.pathname])
+
   return (<header
     className="w-full max-w-screen-lg m-auto flex flex-col text-neutral-800 "
   >
@@ -32,9 +47,17 @@ export default function Header(){
       w-full p-4
       bg-blue-300
       border-t-2 border-blue-500
+      flex flex-row gap-2
       "
     >
-      <p>Home</p>
+      {
+        location !== 'Home' && <>
+          <a href='/' className="underline">Home</a>
+          <p>&gt;</p>
+          <a>{location}</a>
+        </>
+        || <a>Home</a>
+      }
     </div>
   </header>)
 }
