@@ -26,7 +26,7 @@ export default function DownloadsSection({resources}){
               return <a
                 href={obj.url}
                 key={index }
-                target="_blank"
+                rel="ext"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-2 py-1"
               >
                 {obj.text}
@@ -39,7 +39,7 @@ export default function DownloadsSection({resources}){
         <a
           href="/resources/2020DownPaymentAssistanceHomeownerApplication.pdf"
           className="underline"
-          target="_blank"
+          rel="ext"
         >
           Down Payment Aid Application
         </a>
@@ -48,8 +48,7 @@ export default function DownloadsSection({resources}){
         <a
           href="https://www.seirpc.com/housing"
           className="underline"
-          target="_blank"
-        >
+          rel="ext"        >
           Southeast Iowa Regional Planning Commission Housing Department
         </a>
       </li>
@@ -57,7 +56,7 @@ export default function DownloadsSection({resources}){
         <a
           href="https://www.investopedia.com/how-to-improve-your-credit-score-4590097"
           className="underline"
-          target="_blank"
+          rel="ext"
         >
           Improving Your Credit Score
         </a>
