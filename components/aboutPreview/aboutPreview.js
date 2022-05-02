@@ -16,7 +16,7 @@ export default function AboutPreview(){
       href='/about'       
     >
       <a
-        className="py-2 text-cl max-w-max font-medium bg-blue-300 px-4 rounded-full border-blue-500 border-2 border-solid"
+        className="font-medium underline px-2 py-1 max-w-max"
       >Read more about us</a>
     </Link>
   </div>

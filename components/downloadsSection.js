@@ -27,7 +27,7 @@ export default function DownloadsSection({resources}){
                 href={obj.url}
                 key={index }
                 target="_blank"
-                className="bg-blue-500 text-white font-medium px-2 py-1"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-2 py-1"
               >
                 {obj.text}
               </a>
