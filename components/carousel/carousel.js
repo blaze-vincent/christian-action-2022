@@ -40,13 +40,6 @@ export default function Carousel({
 
   }, [displayedSlide])
 
-  //correct image position on screen size change
-  useEffect(_ => {
-    window.addEventListener('resize', _ => {
-
-    })
-  }); 
-
   //grab controls
   const [clickDetected, setClickDetected] = useState(false)
   const [grabX, setGrabX] = useState(null)
