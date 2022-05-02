@@ -1,4 +1,4 @@
-import ContactInformation from "../components/contactInformation";
+import ContactInformation from "../components/contactInformation/contactInformation";
 import DownloadsSection from "../components/downloadsSection";
 
 export default function Resources(){
