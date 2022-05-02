@@ -10,7 +10,7 @@ export default function AboutPreview(){
     >About us</h2>
 
     <Section imgSrc={'/svg/house-broken.svg'} textContent='Our services are intended for those in difficult situations in need of housing and loan support.'/>
-    <Section imgSrc={'/svg/help.svg'} textContent='We aid people in achieving a comfortable living situation. To do so, we offer partial down payments and zero-interest loans, for example.'/>
+    <Section imgSrc={'/svg/help.svg'} textContent='We aid people in achieving a comfortable living situation. The services we offer include partial down payments and zero-interest loans.'/>
     <Section imgSrc={'/svg/house.svg'} textContent='With our help, you can get back on your feet and live comfortably.'/>
     <Link 
       href='/about'       

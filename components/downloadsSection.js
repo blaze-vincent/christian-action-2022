@@ -1,7 +1,7 @@
 export default function DownloadsSection({resources}){
   return <div className="p-4 bg-blue-100">
     <h2
-      className="font-semibold text-xl font-ibm-serif"
+      className="font-semibold text-2xl font-ibm-serif"
     >Resources</h2>
     <ul
       className="flex flex-col gap-2"
@@ -51,6 +51,15 @@ export default function DownloadsSection({resources}){
           target="_blank"
         >
           Southeast Iowa Regional Planning Commission Housing Department
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.investopedia.com/how-to-improve-your-credit-score-4590097"
+          className="underline"
+          target="_blank"
+        >
+          Improving Your Credit Score
         </a>
       </li>
     </ul>

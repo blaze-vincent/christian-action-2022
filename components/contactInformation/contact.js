@@ -7,7 +7,7 @@ export default function Contact({name, emailAddress}){
     {name}
     {
     emailHidden && <button
-      className="bg-blue-300 hover:bg-blue-400 px-2 py-1 font-medium"
+      className="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 font-medium"
       onClick={e => {setEmailHidden(!emailHidden)}}
     >get email</button>
     || <a 
