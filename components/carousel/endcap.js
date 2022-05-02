@@ -15,7 +15,7 @@ export default function Endcap({side = 'left', slidesCount}){
     if(side === 'right'){
       element.current.style.left = `calc(100% * ${slidesCount} + 20%)`
     }
-  }, [] /*side doesn't ever change so no need for dependency*/)
+  }, [side, slidesCount] /*side doesn't ever change so no need for dependency*/)
 
   //material arrow icon
   return <Arrow

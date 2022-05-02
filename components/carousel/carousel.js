@@ -38,7 +38,7 @@ export default function Carousel({
     }
     slidesContainer.current.style.transition = 'transform 0.5s'
 
-  }, [displayedSlide])
+  }, [displayedSlide, slides.length])
 
   //grab controls
   const [clickDetected, setClickDetected] = useState(false)
