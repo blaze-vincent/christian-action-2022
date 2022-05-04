@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-This template adds a components folder to the root directory of the create-next-app project. A layout component wraps all pages and includes separate footer and header components. Page jsx code is inserted into a \<main\> element in the layout component.
-globals.css is updated to specify a root font size of 18px, and default margin/padding of 0px for all elements.
+<h1>A website for Christian Action</h1>
+<p>This is a website written in React for Christian Action, Inc. created under Drake Hardware & Software.</p>
+<p>I am responsible for all of the programming, as well as most of the design, for the website.</p>
+<p>The main branch was created solely by me, while the danas-vision branch includes design input from Dana, my boss.</p>
