@@ -13,6 +13,6 @@ export default function Slide({
   })
 
   return <div ref={container} className="absolute w-full h-full">
-    <img draggable={false} src={imgSrc}  alt='' />
+    <img draggable={false} src={imgSrc} className='w-full h-full object-cover' alt='' />
   </div>
 }
