@@ -58,7 +58,7 @@ export default function About(){
         We tailor our methods of help to the needs of each individual client.
       </p>
       <p>
-        Some ways we've helped our clients before include making zero-interest loans available, providing partial down payments on houses, and seeking out home repairs.
+        Some ways we&apos;ve helped our clients before include making zero-interest loans available, providing partial down payments on houses, and seeking out home repairs.
       </p>
     </div>
 
