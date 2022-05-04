@@ -9,7 +9,7 @@ export default function DonationSection(){
     <div
       className='w-full h-[20rem]'
     >
-      <img src="/images/handshake.jpg" className='w-full h-full object-cover' /> 
+      <img src="/images/handshake.jpg" className='w-full h-full object-cover' alt=''/> 
     </div>
     <div
       className='flex flex-col gap-4 p-4 text-lg'
