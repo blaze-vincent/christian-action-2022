@@ -18,4 +18,5 @@ const Arrow = forwardRef(({className, alt, title}, ref) => {
   </svg>
 })
 
+Arrow.displayName = 'Arrow';
 export default Arrow;
