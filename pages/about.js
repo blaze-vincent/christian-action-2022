@@ -51,7 +51,7 @@ export default function About(){
       className="bg-blue-100 p-4"
     >
       <h2
-        className="font-semibold text-2xl font-ibm-serif"
+        className="font-semibold text-2xl font-baloo"
       >
         Our Partners and Sponsors
       </h2>

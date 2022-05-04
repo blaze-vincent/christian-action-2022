@@ -1,7 +1,6 @@
 import AboutPreview from "../components/aboutPreview/aboutPreview"
 import Hero from "../components/hero"
 import Head from 'next/head'
-import Link from 'next/link'
 import DonationSection from "../components/donationSection"
 
 export default function Home() {

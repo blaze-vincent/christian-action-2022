@@ -48,7 +48,7 @@ export default function ContactInformation(){
     className="p-4 bg-blue-100"
   >
     <h2
-      className="text-2xl font-semibold font-ibm-serif"
+      className="text-2xl font-semibold font-baloo"
     >
       Contacts
     </h2>
