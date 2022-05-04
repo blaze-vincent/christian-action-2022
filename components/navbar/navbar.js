@@ -33,11 +33,10 @@ export default function Navbar(){
     >
       {
         locations.map((_location, index) => {
-          return <li>
+          return <li key={index} >
             <StyledLink 
               href={_location.url} 
               selected={_location === location}
-              key={index}  
             >
               <a>{_location.name}</a>
             </StyledLink>
