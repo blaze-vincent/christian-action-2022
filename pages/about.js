@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import GraphicTile from '../components/graphicTile'
 
 export default function About(){
   
@@ -28,7 +29,7 @@ export default function About(){
   ]
 
   return <div
-    className="w-full max-w-screen-lg"
+    className="w-full max-w-screen-lg flex flex-col gap-8"
   >
 
     <Head>
@@ -36,6 +37,14 @@ export default function About(){
         About - Christian Action, Inc.
       </title>
     </Head>
+
+    <GraphicTile imgSrc='/images/givingkeys.jpg' />
+
+    <div
+      className='bg-blue-100 p-4'
+    >
+      something
+    </div>
 
     {/* partners */}
     <div
