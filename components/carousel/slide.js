@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRef, useEffect } from "react";
 
 //groups image and textual content for display in a carousel
@@ -14,6 +13,6 @@ export default function Slide({
   })
 
   return <div ref={container} className="absolute w-full h-full">
-    <Image draggable={false} src={imgSrc} layout='fill' objectFit="cover"  alt='' />
+    <img draggable={false} src={imgSrc}  alt='' />
   </div>
 }
