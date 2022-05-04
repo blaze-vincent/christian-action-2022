@@ -41,9 +41,25 @@ export default function About(){
     <GraphicTile imgSrc='/images/givingkeys.jpg' />
 
     <div
-      className='bg-blue-100 p-4'
+      className='bg-blue-100 p-4 flex flex-col gap-4'
     >
-      something
+      <h2
+        className="font-semibold text-2xl font-baloo"
+      >
+        About Christian Action, Inc.
+      </h2>
+      <p>
+        Christian Action, Inc. serves primarily to help people get homes.
+      </p>
+      <p>
+        Our emphasis is on helping people get into homes, rather than making homes available to people.
+      </p>
+      <p>
+        We tailor our methods of help to the needs of each individual client.
+      </p>
+      <p>
+        Some ways we've helped our clients before include making zero-interest loans available, providing partial down payments on houses, and seeking out home repairs.
+      </p>
     </div>
 
     {/* partners */}
