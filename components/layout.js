@@ -18,8 +18,6 @@ export default function Layout({children}){
       className="h-max flex flex-col gap-6 justify-start items-center py-2"
     >{children}</main>
 
-    {/* letterhead */}
-    <img src="/svg/letterhead.svg" alt='' className="p-4 max-w-screen-lg w-full m-auto mt-40"/>
     <Footer />
     </div>)
 }
