@@ -32,9 +32,13 @@ export default function Navbar(){
       className="list-none flex flex-row sm:gap-6 gap-4  items-center h-full"
     >
       {
-        locations.map((_location, key) => {
+        locations.map((_location, index) => {
           return <li>
-            <StyledLink href={_location.url} selected={_location === location}>
+            <StyledLink 
+              href={_location.url} 
+              selected={_location === location}
+              key={index}  
+            >
               <a>{_location.name}</a>
             </StyledLink>
           </li>
