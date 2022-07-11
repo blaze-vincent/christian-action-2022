@@ -1,7 +1,7 @@
 export default function DownloadsSection({resources}){
   return <div className="p-4 bg-blue-100">
     <h2
-      className="font-semibold text-2xl font-ibm-serif"
+      className="font-semibold text-2xl font-baloo"
     >Resources</h2>
     <ul
       className="flex flex-col gap-2"

@@ -18,14 +18,20 @@ export default function Carousel({
       imgSrc: '/images/paperwork.jpg',
     },
     {
-      imgSrc: '/images/house.jpg',
+      imgSrc: '/images/keys.jpg',
     },
   ]
 }) {
 
+  const scrollTimeout = useRef(null)
   const slidesContainer = useRef(null)
   const [displayedSlide, setDisplayedSlide] = useState(0)
+
   useEffect(_ => {
+    function autoScroll(){
+      setDisplayedSlide(displayedSlide + 1)
+    }
+    
     //edge cases (literally lol)
     if(displayedSlide < 0){
       setDisplayedSlide(slides.length - 1)
@@ -38,6 +44,20 @@ export default function Carousel({
     }
     slidesContainer.current.style.transition = 'transform 0.5s'
 
+    //autoscrolling functionality
+    if(scrollTimeout.current){
+      clearTimeout(scrollTimeout.current)
+      scrollTimeout.current = null
+    }
+    scrollTimeout.current = setTimeout(_ => {
+      autoScroll()
+    }, 5000)
+    return _ => {
+      if(scrollTimeout.current){
+        clearTimeout(scrollTimeout.current)
+        scrollTimeout.current = null
+      }
+    }
   }, [displayedSlide, slides.length])
 
   //grab controls
@@ -81,6 +101,11 @@ export default function Carousel({
         cursor-grab
         "
       onPointerDown={e => {
+        if(scrollTimeout.current){
+          clearTimeout(scrollTimeout.current)
+          scrollTimeout.current = null
+        }
+
         e.preventDefault()
         slidesContainer.current.style.transition = ''
         slidesContainer.current.style.cursor = 'grabbing'

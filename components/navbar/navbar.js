@@ -1,35 +1,48 @@
 import StyledLink from './link'
+import {useState, useEffect} from 'react'
+import {useRouter} from "next/router"
+
+const locations = [
+  {
+    url: '/',
+    name: 'Home'
+  },
+  {
+    url: '/about',
+    name: 'About'
+  },
+  {
+    url: '/resources',
+    name: 'Resources'
+  }
+]
 
 export default function Navbar(){
+
+  const router = useRouter();
+  const [location, setLocation] = useState(locations[0]);
+  useEffect(_ => {
+    setLocation(locations.find(_location => {return _location.url === router.pathname}))
+  }, [router.pathname])
+
   return <nav
     className=""
   >
     <ul
       className="list-none flex flex-row sm:gap-6 gap-4  items-center h-full"
     >
-      <li>
-        <StyledLink href='/'>
-          <a>Home</a>
-        </StyledLink>
-      </li>
-      <li>
-        <StyledLink href='/about'>
-          <a>About</a>
-        </StyledLink>
-      </li>
-      <li>
-        <StyledLink href='/resources'>
-          <a>Resources</a>
-        </StyledLink>
-      </li>
-      <li>
-        <StyledLink href='/#give'>
-          <a
-            className="flex flex-row gap-1 items-center"
-          >Give
-          </a>
-        </StyledLink>
-      </li>
+      {
+        locations.map((_location, index) => {
+          return <li key={index} >
+            <StyledLink 
+              href={_location.url} 
+              selected={_location === location}
+            >
+              <a>{_location.name}</a>
+            </StyledLink>
+          </li>
+        })
+      }
     </ul>
   </nav>
 }
