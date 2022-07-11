@@ -23,12 +23,16 @@ const contacts = [
     email: 'robatbbt@hotmail.com'
   },
   {
-    name: 'David Selmon',
+    name: 'Reverend David Selmon',
     email: 'dselmon431@gmail.com'
   },
   {
     name: 'Reverend Susanne Smith',
     email: 'revses@aol.com'
+  },
+  {
+    name: 'Reverend Orlando "Ray" Dial',
+    email: 'odial5542@msn.com'
   },
   {
     name: 'Marshal Walz',
