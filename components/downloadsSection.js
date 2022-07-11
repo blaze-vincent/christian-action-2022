@@ -8,20 +8,20 @@ export default function DownloadsSection({resources}){
     <ul
       className="flex flex-col gap-2"
     >
-      <li className="flex flex-col xs:flex-row justify-between xs:gap-2 xs:items-end items-start">
+      <li className="flex flex-col justify-between items-start">
         <p>
           Assistance Application
         </p>
-        <div className="flex flex-row gap-4 items-center">
+        <div className="flex flex-col">
 
           {
             [
               {
-                text: '.docx',
+                text: 'Microsoft Word document',
                 url: '/resources/ChristianActionApplicationForm.docx'
               },
               {
-                text: '.pdf',
+                text: 'Adobe PDF',
                 url: '/resources/ChristianActionApplicationForm.pdf'
               }
             ].map((obj, index) => {
@@ -29,7 +29,7 @@ export default function DownloadsSection({resources}){
                 href={obj.url}
                 key={index }
                 rel="ext"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-2 py-1"
+                className="underline pl-4"
               >
                 {obj.text}
               </a>
