@@ -11,8 +11,8 @@ export default function Header(){
     <div className="flex px-4 pt-4 pb-2 sm:flex-row items-center flex-col sm:gap-4 justify-between w-full">
       <Link href='/'>
         <a>
-          <h1 className="text-4xl relative hover:underline whitespace-nowrap md:text-5xl font-medium font-handwriting">
-            Christian Action, Inc. 
+          <h1 className="text-4xl relative hover:underline whitespace-nowrap sm:text-5xl font-medium font-handwriting">
+            Christian Action
           </h1>
         </a>
       </Link>
