@@ -3,20 +3,12 @@ import Contact from "./contact"
 
 const contacts = [
   {
-    name: 'Jean Ballinger',
-    email: 'jeanballingercpa@myiowacpa.com'
-  },
-  {
     name: 'Roger Hatteberg',
     email: 'rogerhatteberg@msn.com'
   },
   {
     name: 'Brice Hughes',
     email: 'pastor@zionuccburlington.com'
-  },
-  {
-    name: 'James Miller',
-    email: 'jameswmiller@craylawfirm.com'
   },
   {
     name: 'Tom Richert',
@@ -35,7 +27,7 @@ const contacts = [
     email: 'dselmon431@gmail.com'
   },
   {
-    name: 'Susanne Smith',
+    name: 'Reverend Susanne Smith',
     email: 'revses@aol.com'
   },
   {
