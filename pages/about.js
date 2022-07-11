@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import GraphicTile from '../components/graphicTile'
+import SectionTitle from '../components/sectionTitle'
 
 export default function About(){
   
@@ -41,13 +42,11 @@ export default function About(){
     <GraphicTile imgSrc='/images/givingkeys.jpg' />
 
     <div
-      className='bg-blue-100 p-4 flex flex-col gap-4'
+      className='p-4 flex flex-col gap-4'
     >
-      <h2
-        className="font-semibold text-2xl font-baloo"
-      >
+      <SectionTitle>
         About Christian Action, Inc.
-      </h2>
+      </SectionTitle>
       <p>
         Christian Action, Inc. serves primarily to help people get homes.
       </p>
@@ -64,13 +63,11 @@ export default function About(){
 
     {/* partners */}
     <div
-      className="bg-blue-100 p-4"
+      className="p-4"
     >
-      <h2
-        className="font-semibold text-2xl font-baloo"
-      >
+      <SectionTitle>
         Our Partners and Sponsors
-      </h2>
+      </SectionTitle>
       {partners.map((partner, index) => {
         return <div
           key={index}

@@ -1,4 +1,5 @@
 import Carousel from "./carousel/carousel";
+import SectionTitle from "./sectionTitle";
 
 export default function Hero(){
   return <div className="w-full max-w-screen-lg grid sm:grid-cols-3 gap-2">
@@ -6,11 +7,11 @@ export default function Hero(){
       className='sm:col-span-2'
     />
     <div
-      className="bg-blue-200 p-4 h-max overflow-auto flex flex-col gap-4"
+      className="p-4 h-max overflow-auto flex flex-col gap-4"
     >
-      <h2 className="font-baloo font-medium text-2xl">
+      <SectionTitle>
         We&apos;re Here to Help
-      </h2>
+      </SectionTitle>
       <p>
         Christian Action, Inc. is committed to helping the underprivileged people of Burlington, Iowa obtain housing. We specialize our means of assistance to the needs of the individual.
         <a 

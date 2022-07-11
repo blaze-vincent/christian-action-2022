@@ -1,3 +1,4 @@
+import SectionTitle from "../sectionTitle"
 import Contact from "./contact"
 
 const contacts = [
@@ -45,13 +46,11 @@ const contacts = [
 
 export default function ContactInformation(){
   return <div
-    className="p-4 bg-blue-100"
+    className="p-4"
   >
-    <h2
-      className="text-2xl font-semibold font-baloo"
-    >
+    <SectionTitle>
       Contacts
-    </h2>
+    </SectionTitle>
     {
       contacts.map((contact, index) => {
         return <Contact name={contact.name} emailAddress={contact.email} key={index}/>
