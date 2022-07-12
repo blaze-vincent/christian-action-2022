@@ -28,7 +28,8 @@ export default function DownloadsSection({resources}){
               return <a
                 href={obj.url}
                 key={index }
-                rel="ext"
+                target="_blank"
+                rel="noopener"
                 className="underline pl-4"
               >
                 {obj.text}
