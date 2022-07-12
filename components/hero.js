@@ -7,7 +7,7 @@ export default function Hero(){
       className='sm:col-span-2'
     />
     <div
-      className="p-4 h-max overflow-auto flex flex-col gap-4"
+      className="px-4 h-max overflow-auto flex flex-col gap-4"
     >
       <SectionTitle>
         We&apos;re Here to Help
