@@ -6,26 +6,66 @@ export default function About(){
   
   const partners = [
     {
-      name: "Bridges",
+      "name": "Bridges"
     },
     {
-      name: "Casebine Community Credit Union",
-      website: 'https://casebine.com/'
+      "name": "Burlington Area Homeless Shelter",
+      "website": "https://burlingtonareahomelessshelter.wordpress.com/"
     },
     {
-      name: "Two Rivers",
-      website: 'https://www.tworivers.bank/'
+      "name": "Burlington Council of Churches"
     },
     {
-      name: "Council of Churches",
+      "name": "Burlington Housing Partnership"
     },
     {
-      name: "Regional Planning Commission",
-      website: 'https://www.seirpc.com/'
+      "name": "Casebine Community Credit Union",
+      "website": "https://casebine.com/"
     },
     {
-      name: "City of Burlington, IA",
-      website: 'https://www.burlingtoniowa.org/'
+      "name": "City of Burlington, IA",
+      "website": "https://www.burlingtoniowa.org/"
+    },
+    {
+      "name": "Community Action of Southeast Iowa",
+      "website": "https://caofseia.org"
+    },
+    {
+      "name": "Council of Churches"
+    },
+    {
+      "name": "Cray Law Firm",
+      "website": "https://www.craylawfirm.com"
+    },
+    {
+      "name": "Hope Haven",
+      "website": "https://hopehavencorp.com"
+    },
+    {
+      "name": "Iowa Department of Economic Development",
+      "website": "https://www.iowaeda.com"
+    },
+    {
+      "name": "Low Rent Housing Agency of Burlington, Iowa"
+    },
+    {
+      "name": "Messiah Lutheran Church"
+    },
+    {
+      "name": "Southeast Iowa Regional Board of Realtors",
+      "website": "https://www.southeastiowarealtors.com"
+    },
+    {
+      "name": "Southeast Iowa Regional Planning Commission",
+      "website": "https://www.seirpc.com/"
+    },
+    {
+      "name": "Two Rivers",
+      "website": "https://www.tworivers.bank/"
+    },
+    {
+      "name": "Zion UCC",
+      "website": "https://zionuccburlington.org"
     }
   ]
 
@@ -68,14 +108,18 @@ export default function About(){
       <SectionTitle>
         Our Partners and Sponsors
       </SectionTitle>
-      {partners.map((partner, index) => {
-        return <div
-          key={index}
-          className="odd:bg-blue-200 p-2"
-        >
-          <a href={partner.website} className={partner.website && 'underline'}>{partner.name}</a>
-        </div>
-      })}
+      <div
+        className='flex flex-wrap'
+      >
+        {partners.map((partner, index) => {
+          return <div
+            key={index}
+            className="pr-8 pb-3"
+          >
+            <a href={partner.website} className={partner.website && 'underline'}>{partner.name}</a>
+          </div>
+        })}
+      </div>
     </div>
   </div>
 }
