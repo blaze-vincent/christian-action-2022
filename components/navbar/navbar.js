@@ -12,6 +12,10 @@ const locations = [
     name: 'About'
   },
   {
+    url: '/history',
+    name: 'History'
+  },
+  {
     url: '/resources',
     name: 'Resources'
   }
