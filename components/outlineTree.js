@@ -7,8 +7,8 @@ export default function OutlineTree({tree, subsection = false}){
     className={className}
   >
     {
-      tree.map(item => {
-        return <li>
+      tree.map((item, index) => {
+        return <li key={index}>
           <Link href={item.fragment}>
               <a className='underline'>
                 {item.name}
