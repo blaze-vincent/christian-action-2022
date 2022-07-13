@@ -103,7 +103,7 @@ export default function About(){
 
     {/* partners */}
     <div
-      className="p-4"
+      className="flex flex-col gap-4 p-4"
     >
       <SectionTitle>
         Our Partners and Sponsors

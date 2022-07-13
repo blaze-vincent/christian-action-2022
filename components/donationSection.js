@@ -5,7 +5,9 @@ export default function DonationSection(){
   return <div
     className=" flex flex-col gap-4 w-full max-w-screen-lg"
   >
-    <SectionTitle title="Donations" />
+    <div className='pl-4'>
+      <SectionTitle title="Donations" />
+    </div>
     <div
       className='w-full h-[20rem]'
     >

@@ -11,10 +11,11 @@ export default function Home() {
         Home - Christian Action, Inc.
       </title>
     </Head>
-
-    <Hero />
-    <AboutPreview />
-    <DonationSection />
+    <div className="flex flex-col gap-16">
+      <Hero />
+      <AboutPreview />
+      <DonationSection />
+    </div>
   </>
   )
 }

@@ -1,7 +1,7 @@
 import SectionTitle from "./sectionTitle"
 
 export default function DownloadsSection({resources}){
-  return <div className="p-4">
+  return <div className="flex flex-col gap-4 p-4">
     <SectionTitle>
       Resources
     </SectionTitle>
