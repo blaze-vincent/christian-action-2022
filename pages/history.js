@@ -1,5 +1,6 @@
 import SectionTitle from "../components/sectionTitle";
 import OutlineTree from "../components/outlineTree";
+import Head from 'next/head'
 
 function Article({children, subsection = false}){
   const className = `flex flex-col ${subsection ? "gap-2 my-2" : "gap-4"}`
@@ -63,8 +64,15 @@ export default function History(){
   ]
 
   return <div
-    className="w-full max-w-screen-lg flex flex-col gap-12 px-4 mb-40"
+    className="w-full max-w-screen-lg flex flex-col gap-16 px-4 mb-40"
   >
+
+    <Head>
+      <title>
+        History - Christian Action, Inc.
+      </title>
+    </Head>
+
     {/* outline */}
     <div>
       <h3
