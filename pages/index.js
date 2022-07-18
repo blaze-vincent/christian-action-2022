@@ -11,7 +11,7 @@ export default function Home() {
         Home - Christian Action, Inc.
       </title>
     </Head>
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-20">
       <Hero />
       <AboutPreview />
       <DonationSection />
