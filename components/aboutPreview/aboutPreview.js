@@ -4,11 +4,11 @@ import CallToAction from "../callToAction"
 
 export default function AboutPreview(){
   return <div
-    className="w-full max-w-screen-lg flex flex-col gap-4"
+    className="w-full max-w-screen-lg flex flex-col gap-4 text-lg"
   >
-    <div className="pl-4 ">
+    <div className="pl-4">
       <SectionTitle title="About us" />
-      <p className="text-lg relative font-medium">
+      <p className="relative font-medium">
         Christian Action is a Burlington nonprofit whose mission is to help Burlington families gain homeownership. Since 1968, Christian Action has partnered with state and local agencies to support families in making down payments, managing purchase contracts, and maintaining affordable homes.
       </p>
     </div>
