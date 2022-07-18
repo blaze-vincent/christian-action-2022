@@ -29,10 +29,10 @@ export default function Header(){
     </div>
 
     {/* location */}
-    <div className="flex flex-row justify-center sm:justify-start gap-0 items-center h-content">
+    <div className="flex fill-neutral-600 text-neutral-600 flex-row justify-center sm:justify-start gap-0 items-center h-content">
       <Pin className='inline-block scale-50' /> 
       <p>
-        Burlington, Iowa
+        P.O. box 232, Burlington, Iowa
       </p>
     </div>
 
