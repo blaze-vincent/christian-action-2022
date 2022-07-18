@@ -14,54 +14,54 @@ function Article({children, subsection = false}){
 
 export default function History(){
 
-  const sections = [
-    {
-      name: 'Origin',
-      fragment: '#origin'
-    },
-    {
-      name: 'Sponsorship',
-      fragment: '#sponsorship'
-    },
-    {
-      name: 'Incorporation',
-      fragment: '#incorporation'
-    },
-    {
-      name: 'Board of Directors',
-      fragment: '#board'
-    },
-    {
-      name: 'Membership',
-      fragment: '#membership'
-    },
-    {
-      name: 'Funding',
-      fragment: '#funding'
-    },
-    {
-      name: 'Activities',
-      fragment: '#activities',
-      subsections: [
-        {
-          name: 'Early, 1969-1984',
-          fragment: '#early'
-        },
-        {
-          name: 'Mid-term, 1985-2008',
-          fragment: '#mid'
-        },
-        {
-          name: 'Late-term, 2009-Present',
-          fragment: '#late'
-        },
-        {
-          name: 'Future',
-          fragment: '#future'
-        }
-      ]
-    }
-  ]
+  // const sections = [
+  //   {
+  //     name: 'Origin',
+  //     fragment: '#origin'
+  //   },
+  //   {
+  //     name: 'Sponsorship',
+  //     fragment: '#sponsorship'
+  //   },
+  //   {
+  //     name: 'Incorporation',
+  //     fragment: '#incorporation'
+  //   },
+  //   {
+  //     name: 'Board of Directors',
+  //     fragment: '#board'
+  //   },
+  //   {
+  //     name: 'Membership',
+  //     fragment: '#membership'
+  //   },
+  //   {
+  //     name: 'Funding',
+  //     fragment: '#funding'
+  //   },
+  //   {
+  //     name: 'Activities',
+  //     fragment: '#activities',
+  //     subsections: [
+  //       {
+  //         name: 'Early, 1969-1984',
+  //         fragment: '#early'
+  //       },
+  //       {
+  //         name: 'Mid-term, 1985-2008',
+  //         fragment: '#mid'
+  //       },
+  //       {
+  //         name: 'Late-term, 2009-Present',
+  //         fragment: '#late'
+  //       },
+  //       {
+  //         name: 'Future',
+  //         fragment: '#future'
+  //       }
+  //     ]
+  //   }
+  // ]
 
   return <div
     className="w-full max-w-screen-lg flex flex-col gap-16 px-4 mb-40"
@@ -74,12 +74,12 @@ export default function History(){
     </Head>
 
     {/* outline */}
-    <div>
+    {/* <div>
       <h3
         className="text-lg font-medium"
       >History Outline</h3>
       <OutlineTree tree={sections} />
-    </div>
+    </div> */}
 
     <Article>
       <SectionTitle id="origin">Origin</SectionTitle>
@@ -124,7 +124,7 @@ export default function History(){
     </Article>
     
     <Article>
-      <SectionTitle id="activities">Activities</SectionTitle>
+      <SectionTitle id="activities">History</SectionTitle>
       
       <Article subsection>
         <SectionTitle subsection id="early">Early, 1969-1984</SectionTitle>
@@ -145,7 +145,7 @@ export default function History(){
       <Article subsection>
         <SectionTitle subsection id="late">Late-term, 2009-Present</SectionTitle>
         <p>
-          Beyond market indluences, the complexity and time requirements of the HOME Program, which continued to be prioritized, left little capacity for other involvements and the utilization of the contract sales design waned. The design of Christian Action, Inc.&apos;s HOME project was set up to provide &quot;gap&quot; funding for each activity including a combination of down payment assistance, mortgage write-down, and rehabilitation financing. In 2008, the Great Recession occurred. It disrupted the nation&apos;s capital markets and temporarily closed the insured marketplace, effectively depriving lower-income families of access to mortgage financing. Because client families were effectively frozen out, the approved HOME design was no longer viable and the organization was eventually required to surrender its last award, a loss of $299,000. Subsequently, the organization has sought out partnership opportunities to continue the mission. Examples include funding for the Burlington Homeless Shelter and joint ventures with the Southeast Iowa Regional Planning Commission. In addition, Christian Action, Inc. has resumed its traditional activities.
+          Beyond market influences, the complexity and time requirements of the HOME Program, which continued to be prioritized, left little capacity for other involvements and the utilization of the contract sales design waned. The design of Christian Action, Inc.&apos;s HOME project was set up to provide &quot;gap&quot; funding for each activity including a combination of down payment assistance, mortgage write-down, and rehabilitation financing. In 2008, the Great Recession occurred. It disrupted the nation&apos;s capital markets and temporarily closed the insured marketplace, effectively depriving lower-income families of access to mortgage financing. Because client families were effectively frozen out, the approved HOME design was no longer viable and the organization was eventually required to surrender its last award, a loss of $299,000. Subsequently, the organization has sought out partnership opportunities to continue the mission. Examples include funding for the Burlington Homeless Shelter and joint ventures with the Southeast Iowa Regional Planning Commission. In addition, Christian Action, Inc. has resumed its traditional activities.
         </p>
       </Article>
 
