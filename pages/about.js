@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import CallToAction from '../components/callToAction'
 import GraphicTile from '../components/graphicTile'
 import SectionTitle from '../components/sectionTitle'
 
@@ -79,7 +80,7 @@ export default function About(){
       </title>
     </Head>
 
-    <GraphicTile imgSrc='/images/givingkeys.jpg' />
+    <GraphicTile imgSrc='/images/house-sold-2.jpg' />
 
     <div
       className='p-4 flex flex-col gap-4'
@@ -99,6 +100,9 @@ export default function About(){
       <p>
         Some ways we&apos;ve helped our clients before include making zero-interest loans available, providing partial down payments on houses, and seeking out home repairs.
       </p>
+      <CallToAction href='/history'>
+        Read about our history
+      </CallToAction>
     </div>
 
     {/* partners */}

@@ -12,13 +12,13 @@ export default function Carousel({
   className,
   slides = [
     {
-      imgSrc: '/images/hands.jpg',
+      imgSrc: '/images/keys.jpg',
+    },
+    {
+      imgSrc: '/images/house-sold.jpeg',
     },
     {
       imgSrc: '/images/paperwork.jpg',
-    },
-    {
-      imgSrc: '/images/keys.jpg',
     },
   ]
 }) {
