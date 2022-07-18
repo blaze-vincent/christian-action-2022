@@ -1,6 +1,26 @@
 import SectionTitle from "./sectionTitle"
 
-export default function DownloadsSection({resources}){
+export default function DownloadsSection(){
+
+  const resources = [
+    {
+      name: 'Assistance Application',
+      url: '/resources/ChristianActionApplicationForm.pdf' 
+    },
+    {
+      name: 'Down Payment Aid Application',
+      url: '/resources/2020DownPaymentAssistanceHomeownerApplication.pdf' 
+    },
+    {
+      name: 'Southeast Iowa Regional Planning Commission Housing Department',
+      url: 'https://www.seirpc.com/housing' 
+    },
+    {
+      name: 'Improving Your Credit Score',
+      url: 'https://www.investopedia.com/how-to-improve-your-credit-score-4590097' 
+    },
+  ]
+
   return <div className="flex flex-col gap-4 p-4">
     <SectionTitle>
       Resources
@@ -8,62 +28,20 @@ export default function DownloadsSection({resources}){
     <ul
       className="flex flex-col gap-2"
     >
-      <li className="flex flex-col justify-between items-start">
-        <p>
-          Assistance Application
-        </p>
-        <div className="flex flex-col">
-
-          {
-            [
-              {
-                text: 'Microsoft Word document',
-                url: '/resources/ChristianActionApplicationForm.docx'
-              },
-              {
-                text: 'Adobe PDF',
-                url: '/resources/ChristianActionApplicationForm.pdf'
-              }
-            ].map((obj, index) => {
-              return <a
-                href={obj.url}
-                key={index }
-                target="_blank"
-                rel="noopener"
-                className="underline pl-4"
-              >
-                {obj.text}
-              </a>
-            })
-          }
-        </div>
-      </li>
-      <li>
-        <a
-          href="/resources/2020DownPaymentAssistanceHomeownerApplication.pdf"
-          className="underline"
-          rel="ext"
-        >
-          Down Payment Aid Application
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.seirpc.com/housing"
-          className="underline"
-          rel="ext"        >
-          Southeast Iowa Regional Planning Commission Housing Department
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.investopedia.com/how-to-improve-your-credit-score-4590097"
-          className="underline"
-          rel="ext"
-        >
-          Improving Your Credit Score
-        </a>
-      </li>
+      {
+        resources.map((obj, index) => {
+          return <li key={index}>
+            <a
+              href={obj.url}
+              className="underline"
+              rel="ext"
+            >
+              {obj.name}  
+            </a>
+          </li>
+        })
+      }
+      
     </ul>
   </div>
 }
