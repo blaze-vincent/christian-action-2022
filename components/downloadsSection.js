@@ -33,7 +33,7 @@ export default function DownloadsSection(){
           return <li key={index}>
             <a
               href={obj.url}
-              className="underline"
+              className="underline text-lg"
               rel="ext"
             >
               {obj.name}  

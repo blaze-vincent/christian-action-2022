@@ -3,7 +3,7 @@ import OutlineTree from "../components/outlineTree";
 import Head from 'next/head'
 
 function Article({children, subsection = false}){
-  const className = `flex flex-col ${subsection ? "gap-2 my-2" : "gap-4"}`
+  const className = `flex flex-col text-lg ${subsection ? "gap-2 my-2" : "gap-4"}`
   
   return <article
     className={className}

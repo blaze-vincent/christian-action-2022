@@ -12,7 +12,9 @@ export default function Hero(){
       <SectionTitle>
         We&apos;re Here to Help
       </SectionTitle>
-      <p>
+      <p
+        className="text-lg"
+      >
         Christian Action, Inc. is committed to helping the families of Burlington, Iowa gain home ownership. We specialize our means of assistance to the needs of the individual.
         <a 
           href='/resources/ChristianActionApplicationForm.pdf'

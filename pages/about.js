@@ -71,7 +71,7 @@ export default function About(){
   ]
 
   return <div
-    className="w-full max-w-screen-lg flex flex-col gap-8"
+    className="w-full max-w-screen-lg flex flex-col gap-8 text-lg"
   >
 
     <Head>
