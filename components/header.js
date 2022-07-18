@@ -1,6 +1,13 @@
 import Link from "next/link";
 import Navbar from "./navbar/navbar";
+import Phone from "./svg/phone";
 import Pin from "./svg/pin";
+
+function ContactContainer({children}){
+  return <div className="flex mt-2 fill-neutral-600 text-neutral-600 flex-row justify-center sm:justify-start gap-0 items-center h-[24px]">
+    {children}
+  </div>
+}
 
 export default function Header(){
 
@@ -28,12 +35,22 @@ export default function Header(){
       <p>a non-profit corporation designed for enabling home ownership</p>
     </div>
 
-    {/* location */}
-    <div className="flex fill-neutral-600 text-neutral-600 flex-row justify-center sm:justify-start gap-0 items-center h-content">
-      <Pin className='inline-block scale-50' /> 
-      <p>
-        P.O. box 232, Burlington, Iowa
-      </p>
+    <div className="flex flex-col sm:flex-row gap-0 sm:gap-4">
+      <ContactContainer>
+        <Pin className='inline-block scale-50' /> 
+        <p>
+          P.O. box 232, Burlington, Iowa
+        </p>
+      </ContactContainer>
+      <ContactContainer>
+        <Phone className='inline-block scale-50' /> 
+        <a 
+          href='tel:3196710963'
+          className="underline"  
+        >
+          319-671-0963
+        </a>
+      </ContactContainer>
     </div>
 
   </header>)
