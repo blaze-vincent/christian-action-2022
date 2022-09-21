@@ -15,12 +15,7 @@ export default function Hero(){
       <p
         className="text-lg"
       >
-        Christian Action, Inc. is committed to helping the families of Burlington, Iowa gain home ownership. We specialize our means of assistance to the needs of the individual.
-        <a 
-          href='/resources/ChristianActionApplicationForm.pdf'
-          className="underline mx-2"
-          target="_blank"
-        >Apply for help today.</a>
+        Christian Action is a Burlington nonprofit whose mission is to help Burlington families gain homeownership. Since 1968, Christian Action has partnered with state and local agencies to support families in making down payments, managing purchase contracts, and maintaining affordable homes.
       </p>
     </div>
   </div>
