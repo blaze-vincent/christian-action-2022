@@ -100,7 +100,7 @@ export default function Carousel({
         flex flex-row items-center gap-0
         cursor-grab
         "
-      onPointerDown={e => {
+      onMouseDown={e => {
         if(scrollTimeout.current){
           clearTimeout(scrollTimeout.current)
           scrollTimeout.current = null
@@ -112,18 +112,17 @@ export default function Carousel({
         setClickDetected(true)
         setGrabX(e.clientX)
       }}
-      onPointerUp={e => {
+      onMouseUp={e => {
         setGrabX(null)
         handlePointerUp(e)
       }}
-      onPointerLeave={e => {
+      onMouseLeave={e => {
         handlePointerUp(e)
       }}
-      onPointerEnter={e => {
+      onMouseEnter={e => {
         setGrabX(null)
       }}
-
-      onPointerMove={e => {
+      onMouseMove={e => {
         if (clickDetected) {
           slidesContainer.current.style.transform = `translateX(calc(-${displayedSlide * 100}% + ${e.clientX - grabX}px))`
         }
