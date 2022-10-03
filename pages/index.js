@@ -2,6 +2,7 @@ import AboutPreview from "../components/aboutPreview/aboutPreview"
 import Hero from "../components/hero"
 import Head from 'next/head'
 import DonationSection from "../components/donationSection"
+import TestimonialSection from '../components/testimonialSection'
 
 export default function Home() {
   return (<>
@@ -14,6 +15,7 @@ export default function Home() {
     <div className="flex flex-col gap-20 max-w-screen-lg">
       <Hero />
       <AboutPreview />
+      <TestimonialSection />
       <DonationSection />
     </div>
   </>

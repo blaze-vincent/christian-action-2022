@@ -8,14 +8,6 @@ export default function AboutPreview(){
   >
     <div className="pl-4">
       <SectionTitle title="About us" />
-      <p className="relative">
-        Christian Action, Inc. is committed to helping the families of Burlington, Iowa gain home ownership. We specialize our means of assistance to the needs of the individual.
-        <a 
-          href='/resources/ChristianActionApplicationForm.pdf'
-          className="underline mx-2"
-          target="_blank"
-        >Apply for help today.</a>
-      </p>
     </div>
     <Section imgSrc={'/svg/people.svg'} textContent='Our services are intended for those in need of housing and loan support in Burlington.'/>
     <Section imgSrc={'/svg/help.svg'} textContent='We aid people in achieving a comfortable living situation. The services we offer include partial down payments and zero-interest loans.'/>
