@@ -84,7 +84,7 @@ export default function History(){
     <Article>
       <SectionTitle id="origin">Origin</SectionTitle>
       <p>
-        The organization came about as the result of a successful effort to assist a homeless family to gain homeownership. This was accomplished by extending capital to the family via a contract purchase arrangement, thereby avoiding the family&apos;s exposure to normal banking underwriting requirements.
+        The organization came about as the result of a successful effort to assist a homeless family to buy a home. This was accomplished by extending capital to the family via a contract purchase arrangement, thereby avoiding the family&apos;s exposure to normal banking underwriting requirements.
       </p>
     </Article>
 
@@ -137,7 +137,7 @@ export default function History(){
       <Article subsection>
         <SectionTitle subsection id="mid">Mid-term, 1985-2008</SectionTitle>
         <p>
-          Changes in pricing and home financing accelerated beginning in the 1970s and never stopped as successive Presidential administrations promoted the expansion of home ownership. Prices grew, which required the infusion of larger amounts of capital, while access to financing was eased by the availability of insured mortgages and relaxed underwriting standard. These trends reduced the utility of the &quot;traditional Program&quot; and made potential client base smaller and poorer. In response, Christian Action, Inc. sought out and received several grants through the State-administered HOME Program. The project designs included down payment assistance and &quot;acquisition with rehabilitation for resale&quot;. These projects would eventually assist more than 30 families in Burlington.
+          Changes in pricing and home financing accelerated beginning in the 1970s and never stopped as successive Presidential administrations promoted the expansion of home ownership. Prices increased, which required the infusion of larger amounts of capital, while access to financing was eased by the availability of insured mortgages and relaxed underwriting standard. These trends reduced the utility of the &quot;traditional program&quot; and made potential client base smaller and poorer. In response, Christian Action, Inc. sought out and received several grants through the state-administered HOME program. The project designs included down payment assistance and &quot;acquisition with rehabilitation for resale&quot;. These projects would eventually assist more than 30 families in Burlington.
         </p>
       </Article>
 

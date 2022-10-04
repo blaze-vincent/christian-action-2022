@@ -7,14 +7,14 @@ export default function About(){
   
   const partners = [
     {
-      "name": "Bridges"
+      "name": "Bridges out of Poverty"
     },
     {
       "name": "Burlington Area Homeless Shelter",
       "website": "https://burlingtonareahomelessshelter.wordpress.com/"
     },
     {
-      "name": "Burlington Council of Churches"
+      "name": "Burlington Area Council of Churches"
     },
     {
       "name": "Burlington Housing Partnership"
@@ -30,9 +30,6 @@ export default function About(){
     {
       "name": "Community Action of Southeast Iowa",
       "website": "https://caofseia.org"
-    },
-    {
-      "name": "Council of Churches"
     },
     {
       "name": "Cray Law Firm",
@@ -89,7 +86,7 @@ export default function About(){
         About Christian Action, Inc.
       </SectionTitle>
       <p>
-        Christian Action, Inc. serves primarily to help people get homes.
+        Christian Action, Inc. serves primarily to help people buy their own homes.
       </p>
       <p>
         Our emphasis is on helping people get into homes, rather than making homes available to people.
@@ -98,7 +95,7 @@ export default function About(){
         We tailor our methods of help to the needs of each individual client.
       </p>
       <p>
-        Some ways we&apos;ve helped our clients before include making zero-interest loans available, providing partial down payments on houses, and seeking out home repairs.
+        Some ways we&apos;ve helped our clients before include making zero-interest loans available, providing partial down payments on houses, and managing home repairs.
       </p>
       <CallToAction href='/history'>
         Read about our history
