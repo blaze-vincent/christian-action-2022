@@ -89,7 +89,7 @@ export default function About(){
         Christian Action, Inc. serves primarily to help people buy their own homes.
       </p>
       <p>
-        Our emphasis is on helping people get into homes, rather than making homes available to people.
+        Our emphasis is on helping people buy homes, rather than making homes available to people.
       </p>
       <p>
         We tailor our methods of help to the needs of each individual client.
