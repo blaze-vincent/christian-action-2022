@@ -28,18 +28,11 @@ export default function Header(){
       <Navbar />
     </div>
 
-    {/* tagline */}
-    <div
-      className="relative italic w-full max-w-max top-1 px-4 text-neutral-600 text-center m-auto sm:m-0"
-    >
-      <p>a non-profit corporation designed for enabling home ownership</p>
-    </div>
-
     <div className="flex flex-col sm:flex-row gap-0 sm:gap-4">
       <ContactContainer>
         <Pin className='inline-block scale-50' /> 
         <p>
-          P.O. box 232, Burlington, Iowa
+          P.O. box 232, Burlington, Iowa 52601
         </p>
       </ContactContainer>
       <ContactContainer>
