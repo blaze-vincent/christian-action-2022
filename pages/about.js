@@ -58,11 +58,11 @@ export default function About(){
       "website": "https://www.seirpc.com/"
     },
     {
-      "name": "Two Rivers",
+      "name": "Two Rivers Bank and Trust",
       "website": "https://www.tworivers.bank/"
     },
     {
-      "name": "Zion UCC",
+      "name": "Zion United Church of Christ",
       "website": "https://zionuccburlington.org"
     }
   ]
