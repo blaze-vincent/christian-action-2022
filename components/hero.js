@@ -15,7 +15,7 @@ export default function Hero(){
       <p
         className="text-lg"
       >
-        Christian Action is a Burlington nonprofit whose mission is to help Burlington families gain home ownership. Since 1968, Christian Action has partnered with state and local agencies to support families in making down payments, managing purchase contracts, and maintaining affordable homes.
+        Christian Action is a Burlington nonprofit whose mission is to help Burlington families buy affordable homes. Since 1968, Christian Action has partnered with state and local agencies to support families in making down payments, managing purchase contracts, and maintaining affordable homes.
       </p>
     </div>
   </div>
