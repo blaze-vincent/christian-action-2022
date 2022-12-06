@@ -14,7 +14,6 @@ export default function Home() {
     </Head>
     <div className="flex flex-col gap-20 max-w-screen-lg">
       <Hero />
-      <AboutPreview />
       <TestimonialSection />
       <DonationSection />
     </div>
