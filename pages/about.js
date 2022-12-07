@@ -45,7 +45,8 @@ export default function About(){
       "website": "https://www.iowaeda.com"
     },
     {
-      "name": "Low Rent Housing Agency of Burlington, Iowa"
+      "name": "Low Rent Housing Agency of Burlington, Iowa",
+      "website": "https://www.rentassistance.us/li/low-rent-housing-agency-section-8"
     },
     {
       "name": "Messiah Lutheran Church",
