@@ -7,7 +7,8 @@ export default function About(){
   
   const partners = [
     {
-      "name": "Bridges out of Poverty"
+      "name": "Bridges out of Poverty",
+      "website": 'https://burlingtonbuildingbridges.org/'
     },
     {
       "name": "Burlington Area Homeless Shelter",
@@ -47,7 +48,8 @@ export default function About(){
       "name": "Low Rent Housing Agency of Burlington, Iowa"
     },
     {
-      "name": "Messiah Lutheran Church"
+      "name": "Messiah Lutheran Church",
+      "website": 'https://messiahburlington.org/'
     },
     {
       "name": "Southeast Iowa Regional Board of Realtors",
